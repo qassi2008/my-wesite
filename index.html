@@ -10,9 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Aziz Qassi</title>
     <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="pop.css">
 </head>
 <body>
-
+<div id="popup" class="welcome-popup">
+    <p>Thank you for visiting! This page is under development.</p>
+    <button id="closePopup">Close</button>
+</div>
 <header>
     <h1>Aziz Qassi</h1>
     <button class="hamburger-menu" aria-label="Toggle navigation">☰</button>
@@ -23,7 +27,10 @@
             <li><a href="#about"><i class="fas fa-user"></i>About</a></li>
             <li><a href="#services"><i class="fas fa-briefcase"></i>Portfolio</a></li>
             <li><a href="#contact"><i class="fas fa-envelope"></i>Contact</a></li>
-            <input type="checkbox"id="dark-mode-toggle"  class="theme-checkbox">
+            <a href="path/to/your/CV.pdf" download="YourName_CV.pdf" class="download-cv">
+                Download CV
+            </a>
+            <input type="checkbox" id="dark-mode-toggle"  class="theme-checkbox">
 
         </ul>
     </nav>
@@ -33,9 +40,9 @@
     <section id="home" class="full-page-section hero">
         <img src="aziz.png" alt="Welcome Image" class="welcome-image">
         <p>Hello I'm Aziz Qassi</p>
-        <p>I'm a passionate Web Developer & UX/UI designer</p>
-        <p>This page is under development!</p>
+        <p>I'm a Web Developer & UX/UI designer</p>
         <a href="#services" class="btn">Explore Portfolio</a>
+
         <!-- Social Media Icons
         <div class="social-media-icons">
             <a href="https://www.facebook.com/Abdalazizqassi/" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -49,14 +56,14 @@
     </div>
     <section id="about" class="full-page-section">
         <div class="about-top-content"> <!-- Container for top content with image and about text -->
-            <img src="aziz.png" alt="Our Team" class="about-image">
+            <img src="my.png" alt="Our Team" class="about-image">
             <div class="about-text">
                 <h2>About Me</h2>
                 <p class="p">I am <span class="mutiple-text"></span></p>
                 <p>Learn about my journey and what drives me. </p>
-                <p> Discover the Web  experts behind those who bring the magic to life.
-                    Whether it's inbound marketing, sales enablement, or any other revenue-generating goal,
-                    I possesses the skills and expertise to help you succeed.
+                <p> I am currently studying for a Master's degree in Applied Computer Science,
+                    focusing on Interaction Design and Machine Learning. This involves learning
+                    about how to design user-friendly technology and how computers can learn and make decisions..
                 </p>
 
                 <div class="language">
@@ -107,7 +114,6 @@
             </div>
             </div>
 
-        </div>
 
     </section>
 
@@ -150,7 +156,7 @@
                     <a href="https://youtu.be/WZUH-q2nPK4?si=12lFs3ddVIeTvUab" target="_blank" rel="noopener noreferrer">Watch my tutorial on how to design web</a>
                 </p>
             </div>
-            <!-- Development Services 
+            <!-- Development Services -->
             <div class="service-item development">
                 <img src="img_3.png" alt="Web Development">
                 <h3>Web Development</h3>
@@ -164,7 +170,7 @@
 
             <div class="service-item academic">
                 <img src="images/diploma.png" alt="Web Development">
-                <h3></h3>
+                <h3>Data Engineer</h3>
                 <p>Name of qualification and (if applicable) title conferred (in original language): Bachelor i ingeniørfag - data
                     The title bachelor is protected by law in Norway.</p>
             </div>
@@ -172,7 +178,7 @@
                 <img src="images/diploma.png" alt="Web Development">
                 <h3>Data Engineer</h3>
                 <p>Information identifying the holder of the qualification</p>
-            </div>-->
+            </div>
 
         </div>
     </section>
