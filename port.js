@@ -4,7 +4,15 @@ document.addEventListener('DOMContentLoaded', function () {
         var navLinks = document.getElementById('nav-links');
         navLinks.classList.toggle('active');
     }
-//pop up
+        //pop up
+        // Display the popup
+    alert("Thank you for visiting! This page is under development!");
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+
+    document.getElementById('closePopup').onclick = function() {
+        popup.style.display = 'none';
+    };
 
     // Attach click event listener to the hamburger menu
     document.querySelector('.hamburger-menu').addEventListener('click', toggleMenu);
@@ -60,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     // Initialize Typed.js on the .mutiple-text element
     var typed = new Typed(".mutiple-text", {
-        strings: ["Web Developer !", "DevOps Engineer !", "Data Engineer !", " UX/UI Designer !"],
+        strings: ["Web Developer !", "Software Developer !", "Data Engineer !", " UX/UI Designer !"],
         typeSpeed: 100,
         backSpeed: 100,
         backDelay: 1000,
